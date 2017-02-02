@@ -1,0 +1,153 @@
+
+html,body,section{
+    
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+h1,h2, p, .card {
+    text-align: center;
+     
+}
+
+h1 {
+     font-size: 60px;
+     padding-top: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+
+p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.row {
+  position: auto;
+
+}
+
+.card, 
+.responsive-calendar {
+  margin-top: 100px;
+}
+
+.my-container {
+	position: relative;
+	opacity: 1;
+}
+
+.card-title {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  margin-bottom: 70px
+}
+
+.my-container:before { 	
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+    background-image: url('../img/2016-Amgen-Cities-Folsom.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.content {
+    padding-top: 10px;
+    
+}
+
+footer {
+  padding: 20px 120px;
+}
+
+.btn-lg {
+    margin-top: 60px;
+
+}  
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.navbar {
+  background: black;
+
+}
+
+#advisement {
+  margin: 50px 0px;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+  
+  @keyframes fill-it {
+    100% {
+      fill: #000;
+    }
+}
+
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+svg {
+	display: block;
+	margin: 2em auto 0;
+	width: 60%;
+    
+}
+
+.logo {
+  stroke: #000;
+  stroke-width: 6;
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  animation: offset 5s linear forwards, fill-it .8s 5.1s forwards;  
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+  @media (max-width: 980px) {
+    .title {
+      word-wrap: break-word;
+    }
+  }
