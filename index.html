@@ -19,6 +19,7 @@
 
   <link href="css/style.css" rel="stylesheet">
 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -27,15 +28,69 @@
 
   <script src="js/smooth-scroll.js"></script>
 
-  <script src="js/responsive-calendar.js"></script>
+  <script src="js/custom.js"></script>
 
-  <link href="css/responsive-calendar.css" rel="stylesheet" media="screen">
+  <link href='css/fullcalendar.css' rel='stylesheet' />
+  <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+  <script src='js/moment.min.js'></script>
+  <script src='js/jquery.min.js'></script>
+  <script src='js/fullcalendar.min.js'></script>
+
+  <!-- Calendar Script -->
+  <script>
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+
+        <!--Header Section Including Previous,Next and Today-->
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,basicWeek,basicDay'
+        },
+
+        <!--Default Date-->
+        defaultDate: '2017-02-04',
+        editable: true,
+
+        <!--Event Section-->
+        eventLimit: true, // allow "more" link when too many events
+        events: [{
+            title: 'Newbie Code',
+            start: '2017-02-13'
+            }, 
+            {
+            title: 'Newbie Code',
+            start: '2017-02-27',
+            }, 
+            {
+            title: 'Newbie Code',
+            start: '2017-03-13',
+            }, 
+            {
+            title: 'Newbie Code',
+            start: '2017-03-27',
+           }
+          ]
+      });
+    });
+  </script>
+
+  <!--Styling for calendar-->
+  <style>
+     body {  
+      margin-top: 50px;
+      font-size: 10px;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  </style>
 
 </head>
 
 <body>
-
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -49,7 +104,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
@@ -59,7 +114,7 @@
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
 
-  <section class="my-content" id="home">
+  <section class="my-content">
     <div class="row">
       <div class="content">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197.57936mm" height="136.28296mm" viewbox="0 0 700.08435 482.89237">
@@ -76,6 +131,7 @@
       </div>
     </div>
   </section>
+
   <div class="container" id="main-content">
     <div class="row">
       <div class="col-md-5">
@@ -154,33 +210,22 @@
       </div>
 
       <!-- Responsive calendar - START -->
-      <div class="col-md-5">
-        <div class="responsive-calendar">
-          <div class="controls">
-            <a class="pull-left" data-go="prev">
-              <div class="btn"><i class="icon-chevron-left"></i></div>
-            </a>
-            <h4><span data-head-year></span> <span data-head-month></span></h4>
-            <a class="pull-right" data-go="next">
-              <div class="btn"><i class="icon-chevron-right"></i></div>
-            </a>
+      <div class="col-md-5" >
+
+        <!--Card-->
+        <div class="card">
+          <!--Card content-->
+          <div class="card-block">
+            <!--Title-->
+
+            <h2 class="card-title" style="padding-top: 10px; padding-bottom: 20px;">Calendar</h2>
+            <div id='calendar'></div>
+            <!--Text-->
           </div>
-          <hr/>
-          <div class="day-headers">
-            <div class="day header">Mon</div>
-            <div class="day header">Tue</div>
-            <div class="day header">Wed</div>
-            <div class="day header">Thu</div>
-            <div class="day header">Fri</div>
-            <div class="day header">Sat</div>
-            <div class="day header">Sun</div>
-          </div>
-          <div class="days" data-group="days">
-            <!-- the place where days will be generated -->
-          </div>
+          <!--/.Card content-->
         </div>
+        <!--/.Card-->
       </div>
-      <!-- Responsive calendar - END -->
     </div>
 
     <div class="col-md-5">
@@ -231,7 +276,9 @@
   </div>
   <br><br>
   <p id="advisement" style="font-size: 15px;"><b>*FreeCodeCampFolsom is in no way affiliated with FreeCodeCamp. We are just coders that have common goals and met through the FreeCodeCamp Site.</b></p>
+  <div class="container">
 
+  </div>
 
   <footer>
     <div class="container" id="footer">
@@ -247,12 +294,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    $(document).ready(function() {
-      $('.responsive-calendar').responsiveCalendar();
-    });
-  </script>
 </body>
-
 </html>
