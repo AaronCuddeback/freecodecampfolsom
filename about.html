@@ -17,6 +17,10 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
 
+ 
+  
+  
+  <link href="css/clean-blog.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -28,7 +32,7 @@
   <script src="js/smooth-scroll.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -42,61 +46,109 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#about">About Us</a></li>
+          
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          
+          <li>
+            <a href="#about">About Us</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   
-  <section class="about-header">
+  <div class="about-header">
     <div class="row">
-      <div class="title">
-        <h1>About FreeCodeCampFolsom</h1>
-      </div>
+      <div class="title about-title">
+        <h1>About</h1>  
+        <hr class="small">
+        <h2 class="title2">FreeCodeCampFolsom</h2>
+      </div>    
       <div class="row jmbo-btn text-center">
-        <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more &raquo;</a></p>
-      </div>  
+        <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more &dArr;</a></p>
+      </div> 
        <div class="img-row">
         <img class="fcc-img" src="img/fccsvg.svg">
       </div>
     </div>   
-  </section>
-  <section class="info-section">
-    <div>
-      <h2 style="font-weight: bold">
-        This is where I want to talk about stuff
-      </h2>
-      <article class="col-md-12">  
-      <p class="text-center article-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante odio, fringilla nec ipsum quis, auctor efficitur elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla luctus      malesuada pretium. Aliquam id nisi leo. Aliquam erat volutpat. Sed iaculis purus nec pellentesque consequat. Fusce quam tellus, lobortis eu imperdiet vitae, fringilla nec enim. Donec eu turpis quam. Suspendisse ut turpis elit.
-
-Fusce dolor orci, venenatis vel vestibulum in, ullamcorper in dolor. Nam ullamcorper sodales dui ut fringilla. Praesent nec varius urna. Suspendisse potenti. Pellentesque bibendum viverra nisl, vitae rhoncus urna tempus at. Sed lacinia imperdiet nisi sit amet consequat. Aenean egestas nisl et lacus pulvinar feugiat. Proin sit amet eros semper, porta est sit amet, feugiat ligula
-      </p>
-        <p class="text-center article-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ante odio, fringilla nec ipsum quis, auctor efficitur elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla luctus      malesuada pretium. Aliquam id nisi leo. Aliquam erat volutpat. Sed iaculis purus nec pellentesque consequat. Fusce quam tellus, lobortis eu imperdiet vitae, fringilla nec enim. Donec eu turpis quam. Suspendisse ut turpis elit.
-
-Fusce dolor orci, venenatis vel vestibulum in, ullamcorper in dolor. Nam ullamcorper sodales dui ut fringilla. Praesent nec varius urna. Suspendisse potenti. Pellentesque bibendum viverra nisl, vitae rhoncus urna tempus at. Sed lacinia imperdiet nisi sit amet consequat. Aenean egestas nisl et lacus pulvinar feugiat. Proin sit amet eros semper, porta est sit amet, feugiat ligula
-      </p>
-      </article>
-    </div>
-  </section>
+  </div>
   
+  <article class="post" id="about">
+  <header>
+  <h1>This is Blog Post Title</h1>
+  <div class="post-meta">
+    <ul>
+      <li class="author">Author Name</li>
+      <li class="categories">Save in Categories</li>
+    </ul>
+  </div>
+  </header>
+ 
+  <div class="post-content">
+    <section>
+    <h2>This is the Sub-Heading</h2>
+    Sweet roll halvah biscuit toffee liquorice tart pudding sesame snaps. 
+    Biscuit powder jelly-o fruitcake faworki chocolate bar. Pudding oat cake 
+    tootsie roll sesame snaps lollipop gingerbread bonbon. Gummies halvah 
+    gummies danish biscuit applicake gingerbread jelly-o pastry.
+    </section>
+ 
+    <section>
+    <h3>This is another Sub-Heading</h3>
+    Topping cheesecake sweet pie carrot cake sweet roll. Gummi bears lemon drops
+    toffee sesame snaps tart topping chupa chups apple pie gummies. Wafer chocolate
+    cake. Sugar plum chocolate bar topping ice cream carrot cake danish bonbon. 
+    Cheesecake gummi bears dragée jujubes dragée dragée brownie jelly biscuit. Powder croissant jelly beans pastry.
+    </section>
+  </div>
+ 
+</article>
+  
+  <br><br>
   <p id="advisement" style="font-size: 15px;"><b>*FreeCodeCampFolsom is in no way affiliated with FreeCodeCamp. We are just coders that have common goals and met through the FreeCodeCamp Site.</b></p>
-        <footer>
-          <div class="container" id="footer">
-            <hr>
-            <div class="pull-left">©FreeCodeCampFolsom 2017
+  <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                        <a href="https://twitter.com/AaronCuddeback" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/groups/free.code.camp.folsom/" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/gymrat" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Copyright &copy; FreeCodeCampFolsom 2017</p>
+                </div>
             </div>
-            <div class="footer pull-right">
-              <ul class="list-inline">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#about">About Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>  
+        </div>
+    </footer>
+    <!-- Theme JavaScript -->
+  <script src="js/clean-blog.min.js"></script>
    </body>
 </html>

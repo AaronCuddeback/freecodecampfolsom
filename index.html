@@ -17,8 +17,10 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
 
+ 
+  
+  <link href="css/clean-blog.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -90,7 +92,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <!-- Navigation -->
+     <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -104,19 +107,26 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="about.html">About Us</a></li>
+          
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <!-- Main jumbotron for a primary marketing message or call to action -->
 
-  <section class="my-content">
-    <div class="row">
-      <div class="content">
+  <div class="my-content">
+      <div class="container-fluid">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197.57936mm" height="136.28296mm" viewbox="0 0 700.08435 482.89237">
           <path class="logo" id="path1"     transform="translate(0,-569.46988)"
           style="fill:transparent"
@@ -126,11 +136,11 @@
           <h1>Welcome to FreeCodeCamp Folsom!</h1>
         </div>
         <div class="jmbo-button text-center">
-          <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more &raquo;</a></p>
+          <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more &dArr;</a></p>
         </div>
       </div>
-    </div>
-  </section>
+   
+  </div>
 
   <div class="container" id="main-content">
     <div class="row">
@@ -276,23 +286,44 @@
   </div>
   <br><br>
   <p id="advisement" style="font-size: 15px;"><b>*FreeCodeCampFolsom is in no way affiliated with FreeCodeCamp. We are just coders that have common goals and met through the FreeCodeCamp Site.</b></p>
-  <div class="container">
 
-  </div>
-
-  <footer>
-    <div class="container" id="footer">
-      <hr>
-      <div class="pull-left">©FreeCodeCampFolsom 2017
-      </div>
-      <div class="footer pull-right">
-        <ul class="list-inline">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#about">About Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/AaronCuddeback" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/groups/free.code.camp.folsom/" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/gymrat" target="blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Copyright &copy; FreeCodeCampFolsom 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Theme JavaScript -->
+  <script src="js/clean-blog.min.js"></script>
 </body>
 </html>
